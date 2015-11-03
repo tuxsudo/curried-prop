@@ -1,0 +1,39 @@
+{
+  "name": "curried-prop",
+  "version": "1.0.0",
+  "description": "A curried application of grabbing a properties from objects",
+  "main": "common.js",
+  "jsnext:main": "index.js",
+  "scripts": {
+    "test": "babel-node test/test.js | tap-spec",
+    "build": "babel index.js > dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuxsudo/curried-prop.git"
+  },
+  "keywords": [
+    "getter",
+    "prop"
+  ],
+  "author": "Jared Anderson @tuxsudo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tuxsudo/curried-prop/issues"
+  },
+  "homepage": "https://github.com/tuxsudo/curried-prop#readme",
+  "devDependencies": {
+    "babel-cli": "^6.1.1",
+    "babel-preset-es2015": "^6.0.15",
+    "tap-spec": "^4.1.0",
+    "tape": "^4.2.2"
+  },
+  "dependencies": {
+    "instant-curry": "^1.2.0"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  }
+}
